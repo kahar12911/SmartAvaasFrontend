@@ -10,6 +10,6 @@ import { SidebarComponent } from '../../layout/sidebar/sidebar.component';
   standalone: true,
   imports: [CommonModule, RouterModule, SidebarComponent],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {}

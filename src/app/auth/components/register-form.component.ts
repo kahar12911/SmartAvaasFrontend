@@ -9,7 +9,7 @@ import { AuthFacade } from '../services/auth.facade';
   standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './register-form.component.html',
-  styleUrls: ['./register-form.component.css']
+  styleUrls: ['./register-form.component.scss']
 })
 
 export class RegisterFormComponent {

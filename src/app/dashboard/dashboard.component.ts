@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
     SidebarComponent  // ✅ register it here
   ],
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css'],
+  styleUrls: ['./dashboard.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
 export class DashboardComponent {}
