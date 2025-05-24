@@ -1,0 +1,27 @@
+.sidenav-wrapper {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+mat-toolbar {
+  background: var(--green-dark);
+  color: #fffff0;
+}
+
+mat-nav-list {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.active {
+  background-color: var(--green-hover);
+  color: #fffff0;
+}
+
+ul {
+  position: relative;
+}

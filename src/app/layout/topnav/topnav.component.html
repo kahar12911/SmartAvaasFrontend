@@ -1,0 +1,40 @@
+<mat-toolbar>
+  <button
+    mat-icon-button
+    class="example-icon"
+    (click)="sidenav.toggle()"
+    aria-label="Example icon-button with menu icon"
+  >
+    <lucide-angular
+      [img]="menuIcon"
+      class="my-icon text-light"
+    ></lucide-angular>
+  </button>
+  <span>SmartAvaas</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+<mat-sidenav-container class="sidenav-wrapper">
+  <mat-sidenav #sidenav mode="push">
+    <nav>
+      <ul class="py-3 px-5 list-unstyled">
+        <li *ngFor="let n of navItems" class="w-100 cursor-pointer">
+          <div
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLink]="n.path"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="rounded-5 list-div d-flex flex-row py-2 ps-3"
+            matRipple
+            (click)="sidenav.toggle()"
+          >
+            <lucide-angular [img]="n.icon" class="my-icon"></lucide-angular>
+            <p class="ps-1 m-0 fw-semibold">{{ n.menuItem }}</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </mat-sidenav>
+  <mat-sidenav-content class="container-flex d-flex justify-content-center">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
