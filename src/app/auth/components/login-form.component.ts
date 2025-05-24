@@ -9,7 +9,7 @@ import { AuthFacade } from '../services/auth.facade';
   standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './login-form.component.html',
-  styleUrls: ['./login-form.component.css']
+  styleUrls: ['./login-form.component.scss']
 })
 export class LoginFormComponent {
   mobile = '';

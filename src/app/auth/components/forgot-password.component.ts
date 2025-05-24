@@ -9,7 +9,7 @@ import { AuthFacade } from '../services/auth.facade';
   standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './forgot-password.component.html',
-  styleUrls: ['./forgot-password.component.css']
+  styleUrls: ['./forgot-password.component.scss']
 })
 export class ForgotPasswordComponent {
   email = '';
