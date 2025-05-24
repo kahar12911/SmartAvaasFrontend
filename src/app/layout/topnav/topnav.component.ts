@@ -8,6 +8,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Router, RouterModule } from '@angular/router';
 import {
+  BellIcon,
   CheckCircle,
   FileIcon,
   FileText,
@@ -18,6 +19,7 @@ import {
   MenuIcon,
   PhoneCall,
   Settings,
+  UserIcon,
 } from 'lucide-angular';
 
 @Component({
@@ -42,6 +44,8 @@ export class TopnavComponent {
   readonly FileIcon = FileIcon;
   showFiller = false;
   readonly menuIcon = MenuIcon;
+  readonly bellIcon = BellIcon;
+  readonly userIcon = UserIcon;
   navItems = [
     {
       path: 'dashboard',
