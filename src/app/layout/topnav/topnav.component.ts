@@ -1,3 +1,4 @@
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
@@ -10,6 +11,8 @@ import { Router, RouterModule } from '@angular/router';
 import {
   BellIcon,
   CheckCircle,
+  ChevronDown,
+  ChevronUp,
   FileIcon,
   FileText,
   Hammer,
@@ -20,6 +23,7 @@ import {
   PhoneCall,
   Settings,
   UserIcon,
+  UsersIcon,
 } from 'lucide-angular';
 
 @Component({
@@ -34,6 +38,7 @@ import {
     CommonModule,
     MatIconModule,
     MatSidenavModule,
+    CdkAccordionModule,
     LucideAngularModule,
   ],
   templateUrl: './topnav.component.html',
@@ -46,6 +51,10 @@ export class TopnavComponent {
   readonly menuIcon = MenuIcon;
   readonly bellIcon = BellIcon;
   readonly userIcon = UserIcon;
+  readonly usersIcon = UsersIcon;
+  readonly chevronupIcon = ChevronUp;
+  readonly chevronDownIcon = ChevronDown;
+  items = ['Placeholder 1'];
   navItems = [
     {
       path: 'dashboard',
@@ -53,7 +62,7 @@ export class TopnavComponent {
       icon: LayoutDashboard,
     },
     {
-      path: 'maintenance',
+      path: 'login',
       menuItem: 'Maintenance',
       icon: Hammer,
     },
@@ -81,6 +90,18 @@ export class TopnavComponent {
       path: 'help-support',
       menuItem: 'Help Support',
       icon: HelpCircle,
+    },
+  ];
+  community = [
+    {
+      path: 'community-members',
+      menuItem: 'Community Members',
+      icon: UsersIcon,
+    },
+    {
+      path: 'forgot-password',
+      menuItem: 'Community Documents',
+      icon: FileIcon,
     },
   ];
 }

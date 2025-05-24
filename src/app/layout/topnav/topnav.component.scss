@@ -6,8 +6,8 @@
   right: 0;
 }
 mat-toolbar {
-  background: var(--green-dark);
-  color: #fffff0;
+  background: var(--green-primary);
+  color: var(--iwhite);
 }
 
 mat-nav-list {
@@ -17,9 +17,8 @@ mat-nav-list {
   left: 50%;
 }
 
-.active {
-  background-color: var(--green-hover);
-  color: #fffff0;
+.list-div.active {
+  background-color: var(--green-light) !important;
 }
 
 ul {
@@ -28,4 +27,12 @@ ul {
 
 .example-spacer {
   flex: 1 1 auto;
+}
+.example-accordion {
+  display: block;
+  max-width: 500px;
+}
+
+.example-accordion-item {
+  display: block;
 }
