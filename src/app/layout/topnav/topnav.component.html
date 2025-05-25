@@ -26,7 +26,7 @@
   </button>
 </mat-toolbar>
 <mat-sidenav-container class="sidenav-wrapper">
-  <mat-sidenav #sidenav mode="side">
+  <mat-sidenav #sidenav mode="over">
     <nav>
       <ul class="py-3 px-5 list-unstyled">
         <li
@@ -134,7 +134,7 @@
       </ul>
     </nav>
   </mat-sidenav>
-  <mat-sidenav-content class="container-flex d-flex justify-content-center">
+  <mat-sidenav-content class="container-fluid">
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
