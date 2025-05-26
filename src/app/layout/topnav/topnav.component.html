@@ -12,11 +12,25 @@
   </button>
   <span class="fw-semibold">SmartAvaas</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button aria-label="Notifications">
+  <button mat-icon-button aria-label="Notifications" class="position-relative">
     <lucide-angular
       [img]="bellIcon"
       class="my-icon text-white"
     ></lucide-angular>
+    <span
+      class="position-absolute"
+      style="
+        top: 5px;
+        right: 8px;
+        width: 10px;
+        height: 10px;
+        background: #dc3545;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: inline-block;
+        pointer-events: none;
+      "
+    ></span>
   </button>
   <button mat-icon-button aria-label="Profile" [matMenuTriggerFor]="menu">
     <mat-menu #menu="matMenu">
