@@ -18,7 +18,17 @@
       class="my-icon text-white"
     ></lucide-angular>
   </button>
-  <button mat-icon-button aria-label="Profile">
+  <button mat-icon-button aria-label="Profile" [matMenuTriggerFor]="menu">
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Your Account</button>
+
+      <button mat-menu-item>
+        Logout &nbsp;<lucide-angular
+          [img]="logoutIcon"
+          class="my-icon"
+        ></lucide-angular>
+      </button>
+    </mat-menu>
     <lucide-angular
       [img]="userIcon"
       class="my-icon text-white"
