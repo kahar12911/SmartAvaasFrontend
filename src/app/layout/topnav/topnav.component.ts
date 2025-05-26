@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Router, RouterModule } from '@angular/router';
@@ -18,6 +19,7 @@ import {
   Hammer,
   HelpCircle,
   LayoutDashboard,
+  LogOutIcon,
   LucideAngularModule,
   MenuIcon,
   PhoneCall,
@@ -40,6 +42,7 @@ import {
     MatSidenavModule,
     CdkAccordionModule,
     LucideAngularModule,
+    MatMenuModule,
   ],
   templateUrl: './topnav.component.html',
   styleUrl: './topnav.component.scss',
@@ -54,6 +57,7 @@ export class TopnavComponent {
   readonly usersIcon = UsersIcon;
   readonly chevronupIcon = ChevronUp;
   readonly chevronDownIcon = ChevronDown;
+  readonly logoutIcon = LogOutIcon;
   items = ['Placeholder 1'];
   navItems = [
     {
