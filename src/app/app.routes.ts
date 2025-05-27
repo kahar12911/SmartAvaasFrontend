@@ -4,10 +4,7 @@ export const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
     path: 'login',
-    loadComponent: () =>
-      import('./auth/components/login-form.component').then(
-        (m) => m.LoginFormComponent
-      ),
+    loadComponent: () => import('./auth/components/login/login.component'),
   },
   {
     path: 'register',
