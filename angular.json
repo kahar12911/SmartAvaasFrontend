@@ -62,7 +62,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-	    "allowedHosts": ["frontend-1662619145.us-east-1.elb.amazonaws.com"],
+	    "allowedHosts": ["frontend-219121912.us-east-1.elb.amazonaws.com"],
             "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
